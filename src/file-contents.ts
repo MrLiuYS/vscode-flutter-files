@@ -1,3 +1,11 @@
+/*
+ * @Author: your name
+ * @Date: 2019-11-25 09:12:32
+ * @LastEditTime: 2019-11-25 14:18:52
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: /vscode-flutter-files/src/file-contents.ts
+ */
 import * as fs from 'fs';
 import * as path from 'path';
 import * as es6Renderer from 'express-es6-template-engine';
@@ -74,6 +82,7 @@ export class FileContents {
         relative = '';
       }
     }
+
     const templateName: string = template;
     const upperName = toUpperCase(inputName);
     const args = [inputName, upperName, toPrivateCase(upperName), config.appName, relative, params];

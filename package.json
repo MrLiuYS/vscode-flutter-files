@@ -1,22 +1,22 @@
 {
-  "name": "vscode-flutter-files",
-  "displayName": "Flutter Files",
-  "description": "Quickly scaffold flutter bloc file templates",
-  "version": "1.5.5",
+  "name": "vscode-flutter-files-lcfarm",
+  "displayName": "Flutter Files Lcfarm",
+  "description": "Quickly scaffold flutter lcfarm mvp file templates",
+  "version": "1.5.6",
   "icon": "assets/icon.png",
-  "publisher": "gornivv",
+  "publisher": "mrliuys",
   "author": {
-    "name": "Kravchenko Igor"
+    "name": "参考 Kravchenko Igor 的"
   },
   "engines": {
     "vscode": "^1.31.0"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Gorniv/vscode-flutter-files"
+    "url": "https://github.com/MrLiuYS/vscode-flutter-files.git"
   },
   "bugs": {
-    "url": "https://github.com/Gorniv/vscode-flutter-files/issues"
+    "url": "https://github.com/MrLiuYS/vscode-flutter-files/issues"
   },
   "keywords": [
     "Flutter",
@@ -46,22 +46,22 @@
         },
         "flutter-files.menu.bigpack": {
           "type": "boolean",
-          "default": true,
+          "default": false,
           "description": "Shows or hides the menu item."
         },
         "flutter-files.menu.smallpack": {
           "type": "boolean",
-          "default": true,
+          "default": false,
           "description": "Shows or hides the menu item."
         },
         "flutter-files.menu.bloc": {
           "type": "boolean",
-          "default": true,
+          "default": false,
           "description": "Shows or hides the menu item."
         },
         "flutter-files.menu.event": {
           "type": "boolean",
-          "default": true,
+          "default": false,
           "description": "Shows or hides the menu item."
         },
         "flutter-files.menu.model": {
@@ -71,7 +71,7 @@
         },
         "flutter-files.menu.page": {
           "type": "boolean",
-          "default": true,
+          "default": false,
           "description": "Shows or hides the menu item."
         },
         "flutter-files.menu.provider": {
@@ -86,17 +86,17 @@
         },
         "flutter-files.menu.screen": {
           "type": "boolean",
-          "default": true,
+          "default": false,
           "description": "Shows or hides the menu item."
         },
         "flutter-files.menu.state": {
           "type": "boolean",
-          "default": true,
+          "default": false,
           "description": "Shows or hides the menu item."
         },
         "flutter-files.menu.index": {
           "type": "boolean",
-          "default": true,
+          "default": false,
           "description": "Shows or hides the menu item."
         }
       }

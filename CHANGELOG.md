@@ -1,8 +1,20 @@
+<!--
+ * @Author: your name
+ * @Date: 2019-11-25 09:12:32
+ * @LastEditTime: 2019-11-25 14:24:30
+ * @LastEditors: your name
+ * @Description: In User Settings Edit
+ * @FilePath: /vscode-flutter-files/CHANGELOG.md
+ -->
 # Change Log
 
 All notable changes to the "flutter-files" extension will be documented in this file.
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
+
+## [1.5.6] 25.11.2019
+
+- 新增lcfarm mvp
 
 ## [1.5.5] 21.11.2019
 
