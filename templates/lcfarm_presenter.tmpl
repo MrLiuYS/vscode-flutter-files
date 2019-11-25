@@ -1,12 +1,10 @@
-import 'package:flutter_mvp/presenter/abstract_presenter.dart';
 import '${inputName}_contract.dart';
 import '${inputName}_model.dart';
-
 
 /// @desc TODO
  /// @time 
  /// @author 
- class ${upperName}Presenter extends AbstractPresenter<View, Model> implements Presenter {
+ class ${upperName}Presenter extends CommonPresenter<View, Model> implements Presenter {
 
    @override
    Model createModel(){

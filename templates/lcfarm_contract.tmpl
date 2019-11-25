@@ -1,12 +1,8 @@
-import 'package:flutter_mvp/model/i_model.dart';
-import 'package:flutter_mvp/presenter/i_presenter.dart';
-import 'package:flutter_mvp/view/i_view.dart';
-
 /// @desc TODO
-/// @time 
-/// @author 
-abstract class View implements IView {}
+/// @time 2019/11/25 10:39
+/// @author mrliuys
+abstract class View implements ICommonView {}
 
-abstract class Presenter implements IPresenter {}
+abstract class Presenter implements ICommonPresenter {}
 
-abstract class Model implements IModel {}
+abstract class Model implements ICommonModel {}

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:kappa_app/base/lcfarm_widget.dart';
 import '${inputName}_contract.dart';
 import '${inputName}_presenter.dart';
 
@@ -8,7 +7,9 @@ import '${inputName}_presenter.dart';
 /// @author 
 class ${upperName} extends LcfarmWidget{
 
-   ${upperName}({Object arguments}) : super(arguments: arguments);
+   static const String router = Router.scheme + "${inputName}";
+
+   ${upperName}({Object arguments}) : super(arguments: arguments, routerName: router);
 
    @override
    LcfarmWidgetState getState(){
