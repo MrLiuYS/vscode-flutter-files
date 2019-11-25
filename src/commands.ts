@@ -3,6 +3,7 @@ import { ICommand } from './models/command';
 import { CommandType } from './enums/command-type';
 
 export const commandsMap = new Map<CommandType, ICommand>([
+  [CommandType.LcfarmMvp, { fileName: 'you_awesome', resource: ResourceType.LcfarmMvp }],
   [CommandType.BigPack, { fileName: 'you_awesome', resource: ResourceType.BigPack }],
   [CommandType.SmallPack, { fileName: 'you_awesome', resource: ResourceType.SmallPack }],
   [CommandType.Bloc, { fileName: 'you_awesome', resource: ResourceType.Bloc }],

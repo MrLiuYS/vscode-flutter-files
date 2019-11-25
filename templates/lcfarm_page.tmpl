@@ -1,0 +1,35 @@
+import 'package:flutter/material.dart';
+import 'package:kappa_app/base/lcfarm_widget.dart';
+import '${inputName}_contract.dart';
+import '${inputName}_presenter.dart';
+
+/// @desc TODO
+/// @time 
+/// @author 
+class ${upperName} extends LcfarmWidget{
+
+   ${upperName}({Object arguments}) : super(arguments: arguments);
+
+   @override
+   LcfarmWidgetState getState(){
+       return _${upperName}State();
+   }
+}
+class _${upperName}State extends LcfarmWidgetState<Presenter,${upperName}> implements View {
+
+   @override
+   Widget buildWidget(BuildContext context){
+       //TODO: implement buildWidget 
+       return  Container();
+   }
+
+   @override
+   void queryData(){
+       //TODO: implement queryData 
+   }
+
+   @override
+   Presenter createPresenter(){
+       return ${upperName}Presenter();
+   }
+}

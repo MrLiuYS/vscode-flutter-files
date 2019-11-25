@@ -7,6 +7,25 @@ import { IConfig } from './models/config';
 
 export const resources = new Map<ResourceType, IResource>([
   [
+    ResourceType.LcfarmMvp,
+    {
+      locDirName: (loc, config: IConfig) =>
+        !config.defaults.gigpack.flat ? loc.fileName : loc.dirName,
+      locDirPath: (loc, config) => path.join(loc.dirPath, loc.dirName),
+      files: [
+        { name: () => 'contract.dart', type: TemplateType.LcfarmContract },
+        { name: () => 'presenter.dart', type: TemplateType.LcfarmPresenter },
+        { name: () => 'model.dart', type: TemplateType.LcfarmModel },
+        { name: () => '.dart', type: TemplateType.LcfarmPage },
+      ],
+      createFolder: (config: IConfig) =>
+        config && config.defaults && config.defaults.gigpack
+          ? !config.defaults.gigpack.flat
+          : false,
+      options: [OptionType.Flat, OptionType.AppName],
+    },
+  ],
+  [
     ResourceType.BigPack,
     {
       locDirName: (loc, config: IConfig) =>

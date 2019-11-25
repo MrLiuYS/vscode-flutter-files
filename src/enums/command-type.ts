@@ -1,4 +1,5 @@
 export enum CommandType {
+  LcfarmMvp = 'extension.addFlutterLcfarmMvp',
   BigPack = 'extension.addFlutter2BigPack',
   SmallPack = 'extension.addFlutter2SmallPack',
   Bloc = 'extension.addFlutter2Bloc',

@@ -230,9 +230,10 @@ export class AngularCli {
       .map(async (file) => {
         try {
           const fileName: string = file.name(config);
+
           const newName: string = path.join(
             loc.dirPath,
-            fileName.startsWith('_') ? `${loc.fileName}${fileName}` : `${loc.fileName}_${fileName}`,
+            fileName.startsWith('.') ? `${loc.fileName}${fileName}`: (fileName.startsWith('_') ? `${loc.fileName}${fileName}` : `${loc.fileName}_${fileName}`),
           );
           const result: IFiles = {
             name: newName,

@@ -1,4 +1,5 @@
 export enum ResourceType {
+  LcfarmMvp = 'lcfarmmvp',
   BigPack = 'gigpack',
   SmallPack = 'smallpack',
   Bloc = 'bloc',

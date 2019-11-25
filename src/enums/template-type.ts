@@ -8,4 +8,8 @@ export enum TemplateType {
   Screen = 'screen.tmpl',
   State = 'state.tmpl',
   Index = 'index.tmpl',
+  LcfarmContract = 'lcfarm_contract.tmpl',
+  LcfarmPresenter = 'lcfarm_presenter.tmpl',
+  LcfarmModel = 'lcfarm_model.tmpl',
+  LcfarmPage = 'lcfarm_page.tmpl',
 }

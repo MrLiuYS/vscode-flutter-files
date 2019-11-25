@@ -39,6 +39,11 @@
       "type": "object",
       "title": "Flutter Files menu option configuration",
       "properties": {
+        "flutter-files.menu.lcfarmmvp": {
+          "type": "boolean",
+          "default": true,
+          "description": "Shows or hides the menu item."
+        },
         "flutter-files.menu.bigpack": {
           "type": "boolean",
           "default": true,
@@ -98,6 +103,10 @@
     },
     "commands": [
       {
+        "command": "extension.addFlutterLcfarmMvp",
+        "title": "New Lcfarm MVP"
+      },
+      {
         "command": "extension.addFlutter2BigPack",
         "title": "New Big Pack Bloc"
       },
@@ -144,6 +153,11 @@
     ],
     "menus": {
       "explorer/context": [
+        {
+          "when": "config.flutter-files.menu.lcfarmmvp",
+          "command": "extension.addFlutterLcfarmMvp",
+          "group": "0Flutter Pack"
+        },
         {
           "when": "config.flutter-files.menu.bigpack",
           "command": "extension.addFlutter2BigPack",
